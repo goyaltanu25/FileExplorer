@@ -1,0 +1,48 @@
+.flex-items{
+    display: flex;
+}
+.sidebar{
+    background: #c2c2c2;
+    min-height: 100vh;
+    min-width: 18rem;
+    padding: 1rem;
+}
+.file-explorer-container{
+    margin: 1rem;
+}
+
+.file-section{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+}
+.collapsed{
+    background-color: #a19e9e;
+    margin: 3px 0px;
+}
+.icon{
+    padding: 2px 6px;
+}
+.main-container{
+    min-width: 100vw;
+    background: #3d423f;
+    min-height: 100%;
+}
+.file-explorer-Container{
+   display: flex;
+   min-width: 100vw;
+   min-height: 100%;
+}
+.file-explorer{
+    padding: 12rem 28rem;
+    color: #efeaea;
+}
+.add-icon svg{
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.add-folder-icons{
+    padding-left: 62px;
+}
