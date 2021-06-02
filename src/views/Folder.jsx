@@ -8,9 +8,8 @@ export default function Folder(props) {
         <Container>
             <div className={file.isExpanded ? "" : "collapsed"}>
                 <div>
-                    <div
-                        id={index}
-                        eventKey={index}>
+                    <div id={index} eventKey={index} style={{width:'20vw'}}>
+                        <div style={{float:'left'}}>
                         <span className="icon" onClick={() => toggleFolderSection(index,file.name)}>
                             {!file.isExpanded ?
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
@@ -30,6 +29,9 @@ export default function Folder(props) {
 
                         <span>{file.name}</span>
                         
+
+                        </div>
+                        <div>
                         {file.isExpanded && <span className="add-folder-icons">
                         <span className="icon" onClick={()=>addFolder(index,file.name)}>
                             {/* add folder */}
@@ -47,6 +49,7 @@ export default function Folder(props) {
                         </span>
                         </span>
                          }
+                        </div>
                     </div>
 
                 </div>

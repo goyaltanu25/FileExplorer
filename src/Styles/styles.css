@@ -4,8 +4,8 @@
 .sidebar{
     background: #c2c2c2;
     min-height: 100vh;
-    min-width: 18rem;
-    padding: 1rem;
+    min-width: 25vw;
+    padding: 12px 20px;
 }
 .file-explorer-container{
     margin: 1rem;
@@ -45,4 +45,10 @@
 
 .add-folder-icons{
     padding-left: 62px;
+}
+
+.list-style{
+    list-style-type: none;
+    margin: 3px 0px;
+    padding: 4px 16px;
 }

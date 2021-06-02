@@ -106,7 +106,7 @@ export default function Sidebar() {
     const traverseFiles =(items)=> {
         return items.map((file, index) => {
             if (file.isDirectory) {
-                return <div >
+                return <>
                   <Folder 
                   file={file} 
                   traverseFiles={traverseFiles} 
@@ -115,11 +115,11 @@ export default function Sidebar() {
                   addFolder={addFolder}
                   addFile={addFile}
                   />
-                </div>
+                 </>
 
             } else {
                 return <>
-                    <File file={file}/> 
+                      <File file={file}/> 
                 </>
             }
         });
